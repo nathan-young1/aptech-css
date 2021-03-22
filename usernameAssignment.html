@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./checkbox.gif">
+    <link rel="stylesheet" href="loginFormCss.css">
+    <title>Login Page</title>
+</head>
+<body>
+    
+    <div class="formSection">
+        <form action="loginLandingPage.html" method="POST">
+            <fieldset>
+            <div class="allInput">
+                <h1>Welcome</h1>
+                <label for="email">Username: </label>
+                <input type="email" name="email" id="" placeholder="Username" required class="usernameInput">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id=""
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                placeholder="Password" oninvalid='setCustomValidity("Input at least one Uppercase \(A-Z\) "+
+                "At least one Lowercase \(a-z\) "+
+                "At least one digit \(0-9\) "+
+                "At least 8 characters ")'
+                required oninput="setCustomValidity('')" class="passwordInput">
+                <input type="submit" value="Login" class="submit">
+            </div>
+
+        </form>
+            </fieldset>
+    </div>
+</body>
+</html>

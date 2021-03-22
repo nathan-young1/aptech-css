@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to bottom left, rgba(100, 66, 21, 0.6),rgba(13, 75, 99, 0.6));
+    background-attachment: fixed;
+    margin: 0;
+}
+
+form{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+}
+
+.allInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.formSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+label{
+    margin: 1.5% 0;
+    font-size: 1.7rem;
+    background-image: linear-gradient(rgb(14, 116, 110),rgb(45, 47, 48));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.usernameInput,.passwordInput{
+    width: 60%;
+    border: none;
+    border-bottom: 3px solid black;
+    padding: 1em;
+    box-shadow: 2px 5px 10px grey;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: black;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.usernameInput:focus,.passwordInput:focus{
+    outline: 2px solid gray;
+}
+
+fieldset{
+    border-color: white;
+    border-radius: 1em;
+    border-width: 4px;
+    padding: 1em;
+}
+
+
+.passwordInput{
+    margin-bottom: 15px;
+}
+
+.submit{
+    height: 40px;
+    width: 15%;
+    border: none;
+    background-color: rgb(51, 49, 49);
+    color: white;
+    border-radius: 1em;
+}
+
+
+.allInput h1{
+    margin: 0;
+    color: rgba(119, 11, 35, 0.555);
+}
+
+input[type=password]:valid{
+    border-bottom: 4px solid teal;
+}
+
+input[type=password]:invalid{
+    border-bottom: 4px solid red;
+}
