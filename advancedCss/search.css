@@ -65,3 +65,19 @@ h1{
     display: block;
     width: fit-content;
 }
+#search{
+    background-color: blue;
+    transition: 2s;
+}
+#search:hover{
+    background-color: red;
+    width: 50%;
+}
+#search::placeholder{
+    color: red;
+    transition: 2s;
+}
+
+#search:hover::placeholder{
+    color: white;
+}
