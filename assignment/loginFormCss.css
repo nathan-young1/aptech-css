@@ -1,3 +1,5 @@
+/* ---The background color change is at the end of the page---- */
+
 *{
     box-sizing: border-box;
 }
@@ -52,6 +54,7 @@ label{
     padding: 1em;
     box-shadow: 2px 5px 10px grey;
     font-weight: 700;
+    background-color: white;
     font-size: 0.8rem;
     color: black;
 }
@@ -91,10 +94,14 @@ fieldset{
     color: rgba(119, 11, 35, 0.555);
 }
 
+
+/* -----Change the background Color-------- */
 input[type=password]:valid{
-    border-bottom: 4px solid teal;
+    background-color: teal;
 }
 
-input[type=password]:invalid{
-    border-bottom: 4px solid red;
+/* ---only start to show invalid when the user focus on the text field */
+
+input[type=password]:focus:invalid{
+    background-color: red;
 }
