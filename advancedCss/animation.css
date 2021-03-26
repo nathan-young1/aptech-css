@@ -20,11 +20,11 @@ div{
     border-radius: 50%;
     background-image: linear-gradient(rgba(122, 57, 19, 0.616),rgb(30, 133, 119));
     animation-name: rotateCircle;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-fill-mode: both;
+    animation-direction:  normal;
+    animation-fill-mode: forwards;
     box-shadow: 2px 7px 5px 6px gray;
 }
 
@@ -39,14 +39,15 @@ p{
 }
 
 @keyframes rotateCircle{
-    from{
-    transform: translateX(0px) rotate(0deg);
-    -webkit-transform: translateX(0px) rotate3d(0deg);}
-    to{
-        transform: translateX(1200px) rotate(360deg);
-        -webkit-transform: translateX(0px) rotate3d(360deg);}
-}
-
-@-webkit-keyframes jj{
-
+    0%{transform: translateX(0vw) translateY(0vh);}
+    10%{transform: translateX(20vw) translateY(0vh)}
+    20%{transform: translateX(20vw) translateY(10vh);}
+    30%{transform: translateX(40vw) translateY(10vh);}
+    40%{transform: translateX(40vw) translateY(20vh);}
+    50%{transform: translateY(20vh) translateX(60vw);}
+    60%{transform: translateX(60vw) translateY(0vh);}
+    70%{transform: translateY(0vh) translateX(80vw);}
+    80%{transform: translateX(80vw) translateY(-10vh);}
+    90%{transform: translateY(-10) translateX(80vw);}
+    100%{transform: translateY(-10vh) translateX(100vw);}
 }
