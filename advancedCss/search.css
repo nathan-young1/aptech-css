@@ -8,21 +8,42 @@ body{
     height: 100vh;
     position: relative;
     background-attachment: fixed;
+    background-image: linear-gradient(to bottom right,rgba(68, 65, 65,0.4),rgba(255, 0, 0,0.4)),url('jared-verdi-PNKwdJ8WetM-unsplash.jpg');
     background-size: cover;
-    /* background-image: linear-gradient(to bottom right,rgba(68, 65, 65,0.4),rgba(255, 0, 0,0.4)),url('jared-verdi-PNKwdJ8WetM-unsplash.jpg'); */
-    background-color: teal;
+    animation-name: move;
+    /* background-repeat: no-repeat; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@keyframes move{
+    from{
+        background-image: linear-gradient(to bottom right,rgba(109, 107, 24, 0.2),rgba(25, 158, 107, 0.2)),url('jared-verdi-PNKwdJ8WetM-unsplash.jpg');
+        background-position-x: 0vw;
+        background-position-y: 0vh;
+    }
+    to{
+        background-image: linear-gradient(to bottom right,rgba(7, 63, 80, 0.3),rgba(18, 146, 114, 0.3)),url('jared-verdi-PNKwdJ8WetM-unsplash.jpg');
+        background-position-x: 100vw;
+        background-position-y: 100vh;
+    }
 }
 
 form{
-    position: absolute;
-    top: 50%;
-    left: 40%;
+    display: flex;
     width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
-td{
-    width: 50%;
-}
 
 footer{
     position: absolute;
@@ -34,13 +55,14 @@ footer{
 }
 
 input[type=text]{
-    width: 100%;
+    width: 170px;
     height: 60px;
     outline-color: yellow;
+    margin-right: 20px;
 }
 
 input[type=submit]{
-    width: 60%;
+    width: 120px;
     height: 50px;
     border: none;
     background-color: lightslategray;
@@ -66,7 +88,7 @@ h1{
     width: fit-content;
 }
 #search{
-    background-color: blue;
+    background-color: rgba(10, 107, 124, 0.548);
     transition: 2s;
 }
 #search:hover{
@@ -74,7 +96,7 @@ h1{
     width: 50%;
 }
 #search::placeholder{
-    color: red;
+    color: rgb(20, 87, 50);
     transition: 2s;
 }
 

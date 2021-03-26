@@ -48,9 +48,8 @@ h1{
 @media print {
 
     body{
-        background: linear-gradient(to bottom right,rgba(165, 108, 23, 0.432),rgba(98, 247, 222, 0.2));
+        background: linear-gradient(to right,rgba(165, 108, 23, 0.432),rgba(98, 247, 222, 0.2));
         margin: 0;
-        height: 100vh;
     }
    
     section{

@@ -1,0 +1,52 @@
+body{
+    background-image: linear-gradient(rgba(49,48,33,0.7),rgba(30,66,11,0.5));
+    background-attachment: fixed;
+}
+
+h1{
+    font-size: 5rem;
+    background-image: linear-gradient(rgba(121, 23, 23, 0.603),rgba(15, 78, 94, 0.774));
+    -webkit-background-clip: text;
+    color: transparent;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+div{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(122, 57, 19, 0.616),rgb(30, 133, 119));
+    animation-name: rotateCircle;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    box-shadow: 2px 7px 5px 6px gray;
+}
+
+p{
+    color: white;
+    text-align: justify;
+}
+
+@keyframes changeColor{
+    from{background-image: linear-gradient(rgba(121, 23, 23, 0.7),rgba(15, 78, 94, 0.774));}
+    to{background-image: linear-gradient(rgba(13, 85, 55, 0.603),rgba(15, 78, 94, 0.774));}
+}
+
+@keyframes rotateCircle{
+    from{
+    transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate3d(0deg);}
+    to{
+        transform: translateX(1200px) rotate(360deg);
+        -webkit-transform: translateX(0px) rotate3d(360deg);}
+}
+
+@-webkit-keyframes jj{
+
+}
