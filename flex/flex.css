@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(209, 98, 98, 0.705),rgba(90, 199, 90, 0.568));
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.flex > div{
+    margin: 0;
+    padding: 25px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.one,.two,.three,.four{
+    width: 23%;
+}
+
+.one{
+    background-color: aqua;
+}
+
+.two{
+    background-color: rgb(8, 58, 58);
+}
+
+.three{
+    background-color: rgb(16, 73, 25);
+}
+
+.four{
+    background-color: rgb(138, 41, 130);
+}

@@ -1,11 +1,12 @@
 body{
-    background-image: linear-gradient(rgba(49,48,33,0.7),rgba(30,66,11,0.5));
+    /* background-image: linear-gradient(rgba(17, 94, 68, 0.7),rgba(16, 74, 121, 0.5)); */
     background-attachment: fixed;
+    background-color: black;
 }
 
 h1{
     font-size: 5rem;
-    background-image: linear-gradient(rgba(121, 23, 23, 0.603),rgba(15, 78, 94, 0.774));
+    background-image: linear-gradient(rgba(216, 197, 197, 0.603),rgba(15, 78, 94, 0.774));
     -webkit-background-clip: text;
     color: transparent;
     animation-name: changeColor;
@@ -14,18 +15,19 @@ h1{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
 div{
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    background-image: linear-gradient(rgba(122, 57, 19, 0.616),rgb(30, 133, 119));
+    background-image: linear-gradient(to bottom right,rgba(209, 118, 66, 0.616),rgb(77, 230, 209));
     animation-name: rotateCircle;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction:  normal;
     animation-fill-mode: forwards;
-    box-shadow: 2px 7px 5px 6px gray;
+    box-shadow: 2px 7px 5px 6px rgba(128, 128, 128, 0.39);
 }
 
 p{
@@ -34,8 +36,8 @@ p{
 }
 
 @keyframes changeColor{
-    from{background-image: linear-gradient(rgba(121, 23, 23, 0.7),rgba(15, 78, 94, 0.774));}
-    to{background-image: linear-gradient(rgba(13, 85, 55, 0.603),rgba(15, 78, 94, 0.774));}
+    from{background-image: linear-gradient(rgba(192, 175, 175, 0.7),rgba(15, 78, 94, 0.774));}
+    to{background-image: linear-gradient(rgba(62, 175, 122, 0.603),rgba(53, 130, 150, 0.774));}
 }
 
 @keyframes rotateCircle{
